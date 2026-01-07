@@ -6,7 +6,7 @@ import './App.css';
 
 function ChangePasswordForm() {
   useEffect(() => {
-    ReactGA.initialize('G-22Y6HB05YS');
+    ReactGA.initialize('G-GKTHK8NP11');
     ReactGA.send('pageview'); // Track page visit
   }, []);
   const [email, setEmail] = useState('');
