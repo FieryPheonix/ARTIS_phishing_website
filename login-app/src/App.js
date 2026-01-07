@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 
 function ChangePasswordForm() {
+  useEffect(() => {
+    ReactGA.initialize('G-22Y6HB05YS');
+    ReactGA.send('pageview'); // Track page visit
+  }, []);
   const [email, setEmail] = useState('');
   const [old_password, setOldPassword] = useState('');
   const [new_password, setNewPassword] = useState('');
